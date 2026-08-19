@@ -1,5 +1,5 @@
 import requests,pandas as pd,streamlit as st,plotly.express as px
-API='http://127.0.0.1:8000'; st.set_page_config(page_title='AI Business Forecasting',page_icon='📊',layout='wide')
+API='https://ai-business-forecasting-platform-3.onrender.com'; st.set_page_config(page_title='AI Business Forecasting',page_icon='📊',layout='wide')
 st.title('🚀 AI-Powered Business Forecasting Platform'); st.caption('Retail analytics • Forecasting • Anomaly detection • Recommendations')
 periods=st.sidebar.slider('Forecast months',1,24,6); up=st.sidebar.file_uploader('Upload another CSV',type='csv')
 if up:
